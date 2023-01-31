@@ -55,6 +55,7 @@
 
 //4.The Sum Of The Array
 //array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
 // function sumArray(array) {
 //   console.log(array);
 //   array.reduce(function(total, num) {
@@ -62,24 +63,32 @@
 //   },
 //   );
 // }
-let sumArray = function(array) {
-  console.log(array);
-  array.reduce(function(total, amount) {
-    console.log(total + amount);
-  })
-}
 
-sumArray([2,3])
+// let sumArray = function(array) {
+//   console.log(array);
+//   array.reduce(function(total, amount) {
+//     console.log(total + amount);
+//   })
+// }
+
+// sumArray([2,3])
 // sumArray([2, 3, 5]);
 // console.log(sumArray([1, 2, 3]));
 
 //-----------------------------------------------------
 
-//5.
-// function multiplyArray []{
+//5.Multiplication Of The Array
+function multiplyArray(array) {
+  console.log(array);
+  // let value = 1;
+  array.reduce(function(total, digit){
+    console.log('total: ', total);
+    console.log('array: ', digit);
+    console.log ('mult' , total *= digit);}
+  );
+}
 
-// } 
-
+console.log(multiplyArray([3, 2]));
 //-----------------------------------------------------
 
 //6.
